@@ -6,6 +6,7 @@ import dominio.store.Stock;
 import dominio.user.Address;
 import dominio.user.Customer;
 import dominio.user.Employee;
+import dominio.user.Manager;
 
 import java.util.Calendar;
 
@@ -15,54 +16,110 @@ public class Main {
         db db = new db();
         ShoppingCart shoppingCart = new ShoppingCart();
 
-        Address clientAddress = new Address("Trump Tower", "Fiusa", "123",
-                "Serrana", "SP", "14021615");
-
         Calendar dateOfBirthCustomer = Calendar.getInstance();
         dateOfBirthCustomer.set(1999, Calendar.MARCH, 20);
-
-        Customer customer = new Customer("Black Widow",
-                "Natasha Romanoff",
-                clientAddress,
-                "8887877",
-                dateOfBirthCustomer,
-                "3351212",
-                "3212",
-                "natasha@reges.edu.br",
-                "121212");
-
-        Customer customer2 = new Customer("Black Widow",
-                "Natasha Romanoff",
-                clientAddress,
-                "8887877",
-                dateOfBirthCustomer,
-                "3351212",
-                "3212",
-                "natasha@reges.edu.br",
-                "121212");
-
-        Address employeeAddress = new Address("Avengers Tower",
-                "João Rossi",
-                "9888",
-                "Serrana",
-                "SP",
-                "14021618");
 
         Calendar employeeDateOfBirth = Calendar.getInstance();
         employeeDateOfBirth.set(1999, Calendar.MARCH, 20);
 
-        Employee employee = new Employee("Hawkeye",
-                "Clinton Barton",
+        Calendar purchaseDate = Calendar.getInstance();
+        purchaseDate.set(2023, Calendar.MARCH, 20);
+
+        Calendar purchaseDate2 = Calendar.getInstance();
+        purchaseDate2.set(2023, Calendar.MARCH, 20);
+
+        Address clientAddress = new Address("Trump Tower", "Fiusa", "123",
+                "Serrana", "SP", "14021615");
+
+        Address employeeAddress = new Address("Av itatiaia",
+                "Alto da boa vista",
+                "1414",
+                "Ribeirão Preto",
+                "SP",
+                "14021618");
+
+        Address employeeAddress2 = new Address("Rua paraiso",
+                "Vila tibério",
+                "104",
+                "Ribeirão Preto",
+                "SP",
+                "14022371");
+
+        Address employeeAddress3 = new Address("Av maurílio biagi",
+                "City ribeirão",
+                "478",
+                "Ribeirão Preto",
+                "SP",
+                "14039892");
+
+        Customer customer = new Customer("Gabriel Paulino",
+                "Gabriel",
+                clientAddress,
+                "992132458",
+                dateOfBirthCustomer,
+                "3351212",
+                "1",
+                "gabriel@reges.com.br",
+                "12345");
+
+        Customer customer2 = new Customer("Victor Rafael",
+                "Victor",
+                clientAddress,
+                "993421145",
+                dateOfBirthCustomer,
+                "3351313",
+                "2",
+                "victor@reges.com.br",
+                "54321");
+
+        Customer customer3 = new Customer("Paulo Oliveira",
+                "Paulo",
+                clientAddress,
+                "981421359",
+                dateOfBirthCustomer,
+                "3351414",
+                "3",
+                "paulo@reges.com.br",
+                "34512");
+
+        Employee employee = new Employee("Leandro Moraes",
+                "Leandro",
                 employeeAddress,
-                "3212121",
-                employeeDateOfBirth,
-                "321212",
-                "321212",
-                "clint@reges.edu.br",
-                4,
-                888880,
-                "Archer",
-                80);
+                "982347899",
+                "345580",
+                "102",
+                "leandro@reges.com.br",
+                5,
+                2500,
+                "Caixa",
+                20);
+
+        Employee employee2 = new Employee("Maycon Douglas",
+                "Maycon",
+                employeeAddress,
+                "982344050",
+                "345579",
+                "105",
+                "maycon@reges.com.br",
+                6,
+                2700,
+                "Caixa",
+                25);
+
+        Manager manager = new Manager(
+                "Leandro Moraes",
+                "Leandro",
+                employeeAddress,
+                "982347899",
+                "345580",
+                "102",
+                "leandro@gmail.com",
+                5,
+                2500,
+                "Caixa",
+                20,
+                "Gerente"
+        );
 
         Stock stock = new Stock();
 
@@ -86,12 +143,6 @@ public class Main {
         stock.addProduct(db.product18);
         stock.addProduct(db.product19);
 
-        Calendar purchaseDate = Calendar.getInstance();
-        purchaseDate.set(2023, Calendar.MARCH, 20);
-
-        Calendar purchaseDate2 = Calendar.getInstance();
-        purchaseDate2.set(2023, Calendar.MARCH, 20);
-
         Purchase purchase = new Purchase(customer, employee, 12, purchaseDate);
 
         ItemPurchase item1 = new ItemPurchase(purchase, stock.getProductByBarcode("1"), 15.0, 52.50);
@@ -104,9 +155,9 @@ public class Main {
         shoppingCart.addItemToCart(item3);
         shoppingCart.addItemToCart(item4);
 
-        purchase.printReceipt(shoppingCart.getItems(), shoppingCart.getTotalValue());
+        purchase.printReceipt(shoppingCart.getItems(), shoppingCart.getTotalValue(), purchase );
 
-        Purchase purchase1 = new Purchase(customer, employee, 13, purchaseDate2);
+        Purchase purchase1 = new Purchase(customer2, employee, 13, purchaseDate2);
 
         ItemPurchase item5 = new ItemPurchase(purchase1, stock.getProductByBarcode("3"), 15.0, 52.50);
         ItemPurchase item6 = new ItemPurchase(purchase1, stock.getProductByBarcode("6"), 35.0, 2.50);
@@ -118,6 +169,10 @@ public class Main {
         shoppingCart.addItemToCart(item7);
         shoppingCart.addItemToCart(item8);
 
-        purchase.printReceipt(shoppingCart.getItems(), shoppingCart.getTotalValue());
+        manager.cancelPurchase();
+
+        purchase.printReceipt(shoppingCart.getItems(), shoppingCart.getTotalValue(), purchase1);
+
+
     }
 }

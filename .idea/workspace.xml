@@ -4,22 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bbe09ea-0be3-43af-8c8c-df73f8a46eb8" name="Changes" comment="create the project">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataBaseMocked/db.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dominio/store/ItemPurchase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dominio/store/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dominio/store/Purchase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dominio/store/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dominio/store/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dominio/user/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dominio/user/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dominio/user/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dominio/user/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dominio/user/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dominio/user/Supplier.java" afterDir="false" />
+    <list default="true" id="5bbe09ea-0be3-43af-8c8c-df73f8a46eb8" name="Changes" comment="update project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dominio/store/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dominio/store/Purchase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dominio/store/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dominio/store/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dominio/user/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dominio/user/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dominio/user/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dominio/user/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dominio/user/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dominio/user/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dominio/user/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dominio/user/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dominio/user/Supplier.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,22 +36,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -80,7 +75,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685657446338</updated>
-      <workItem from="1685657447373" duration="10462000" />
+      <workItem from="1685657447373" duration="10512000" />
+      <workItem from="1685741179878" duration="3582000" />
     </task>
     <task id="LOCAL-00001" summary="create the project">
       <created>1685657672441</created>
@@ -89,7 +85,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685657672441</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update project">
+      <created>1685704926751</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685704926751</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update project">
+      <created>1685704934941</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685704934941</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,7 +107,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="create the project" />
+    <MESSAGE value="update project" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

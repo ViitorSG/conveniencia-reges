@@ -25,18 +25,19 @@ public class Purchase {
         this.purchaseDate = purchaseDate;
     }
 
-    public void printReceipt(ArrayList<ItemPurchase> items, double totalValue) {
-        System.out.println("--------Numero da compra: " + this.purchaseNumber + "--------------");
+    public void printReceipt(ArrayList<ItemPurchase> items, double totalValue, Purchase purchase) {
+        System.out.println("--------Numero da compra: " + purchase.purchaseNumber + "--------------");
         System.out.println("Data da compra: " + this.purchaseDate.getTime());
-        System.out.println("Numero da compra: " + this.purchaseNumber);
-        System.out.println("Nome do cliente: " + this.customer.getFullName());
-        System.out.println("Funcionario responsavel pela venda: " + this.employee.getFullName());
+        System.out.println("Numero da compra: " + purchase.purchaseNumber);
+        System.out.println("Nome do cliente: " + purchase.customer.getFullName());
+        System.out.println("Funcionario responsavel pela venda: " + purchase.employee.getFullName());
 
         System.out.println(items);
 
         System.out.println("----------------------------------");
         System.out.println("Total Purchase Value: " + totalValue);
         System.out.println("-----------Volte Sempre---------------");
+        System.out.println("--------------------------------------");
 
         setPurchaseInfo();
     }

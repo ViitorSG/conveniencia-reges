@@ -22,11 +22,11 @@ public class ShoppingCart {
 
     public ArrayList<ItemPurchase> getItems() {
         for (ItemPurchase item : this.items) {
-            System.out.println("----------------------------------");
-            System.out.println("Product: " + item.getProduct().getName());
-            System.out.println("Quantity: " + item.getQuantity());
-            System.out.println("Value: " + item.getProductValue());
-            System.out.println("SubTotal: " + item.getSubTotal());
+            System.out.println("--------------Conveniencia Reges--------------");
+            System.out.println("Produto: " + item.getProduct().getName());
+            System.out.println("Quantidade de produto: " + item.getQuantity());
+            System.out.println("Valor unico do produto: " + item.getProductValue());
+            System.out.println("SubTotal da compra: " + item.getSubTotal());
         }
         return null;
     }
